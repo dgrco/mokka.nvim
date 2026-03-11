@@ -5,8 +5,6 @@ A delightful Neovim colorscheme inspired by various themes like Monokai, Mariana
 ![neovim](https://img.shields.io/badge/neovim-0.8+-green?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
-<img width="1684" height="1190" alt="image" src="https://github.com/user-attachments/assets/b2bbf471-50e6-4306-8e90-114ba5ba8315" />
-
 
 ## Palletes
 <!-- PALETTES_START -->
