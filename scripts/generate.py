@@ -47,7 +47,60 @@ def generate_variant(variant_name, ini_path, template):
     successful_generations += f" - {out_dir}\n"
 
     print(f"Successfully generated variant ({variant_name}):\n{successful_generations}\n")
+    return palette
 
+# Updating README with palettes
+ROLE_LABELS = {
+    "bg0": "Background",
+    "bg1": "Cursorline",
+    "bg2": "Sidebars",
+    "bg3": "Selection",
+    "bg4": "UI chrome",
+    "fg0": "Bright text",
+    "fg1": "Normal text",
+    "fg2": "Subtle",
+    "fg3": "Dim",
+    "red": "Keywords",
+    "orange": "Types",
+    "yellow": "Strings",
+    "green": "Functions",
+    "cyan": "Builtins",
+    "blue": "Tags",
+    "purple": "Numbers",
+    "pink": "Operators",
+    "err": "Error",
+    "warn": "Warning",
+    "info": "Info",
+    "hint": "Hint",
+    "added": "Added",
+    "changed": "Changed",
+    "removed": "Removed",
+}
+
+def generate_palette_table(variant_name, palette):
+    rows = []
+    for key, hex in palette.items():
+        label = ROLE_LABELS.get(key, "")
+        rows.append(f"| {key:<10} | ![#{hex}](https://placehold.co/12x12/{hex}/{hex}.png) {label:<12} | `#{hex}` |")
+    table = "| Role       | Color                                                                  | Hex       |\n"
+    table += "|------------|------------------------------------------------------------------------|--------|\n"
+    table += "\n".join(rows)
+    return f"<details>\n<summary><strong>{variant_name}</strong></summary>\n\n{table}\n\n</details>"
+
+def update_readme(variant_tables):
+    with open("README.md", "r") as f:
+        content = f.read()
+    block = "\n\n".join(variant_tables)
+    # Replace between markers
+    content = re.sub(
+        r"<!-- PALETTES_START -->.*<!-- PALETTES_END -->",
+        f"<!-- PALETTES_START -->\n{block}\n<!-- PALETTES_END -->",
+        content,
+        flags=re.DOTALL
+    )
+    with open("README.md", "w") as f:
+        f.write(content)
+    print("README updated")
 
 def main():
     with open("lua/mokka/palette_template.lua", "r") as f:
@@ -56,11 +109,15 @@ def main():
     palettes_dir = "lua/mokka/palettes"
     os.makedirs(palettes_dir, exist_ok=True)
 
+    variant_tables = []
     for filename in os.listdir(palettes_dir):
         if filename.endswith(".ini"):
             variant_name = filename[:-4]
             ini_path = os.path.join(palettes_dir, filename)
-            generate_variant(variant_name, ini_path, template)
+            palette = generate_variant(variant_name, ini_path, template)
+            variant_tables.append(generate_palette_table(variant_name, palette))
+    update_readme(variant_tables)
+
 
 if __name__ == "__main__":
     main()
