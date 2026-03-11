@@ -42,11 +42,8 @@ A delightful Neovim colorscheme inspired by various themes like Monokai, Mariana
 {
   "dgrco/mokka.nvim",
   priority = 1000,
-  opts = {
-    italics = false,
-  },
-  config = function(opts)
-    require("mokka").setup(opts)
+  config = function()
+    require("mokka").setup({...}) -- See Default Configuration
     vim.cmd("colorscheme mokka")
   end,
 }
