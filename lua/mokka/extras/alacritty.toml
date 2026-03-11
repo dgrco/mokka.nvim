@@ -1,0 +1,68 @@
+# Mokka — Alacritty terminal theme
+# Place in ~/.config/alacritty/themes/ and import with:
+#   import:
+#     - ~/.config/alacritty/themes/mokka.toml
+
+[colors.primary]
+background = "#{{bg0}}"
+foreground = "#{{fg1}}"
+dim_foreground = "#{{fg3}}"
+bright_foreground = "#{{fg0}}"
+
+[colors.cursor]
+text   = "#{{bg0}}"
+cursor = "#{{fg1}}"
+
+[colors.vi_mode_cursor]
+text   = "#{{bg0}}"
+cursor = "#{{cyan}}"
+
+[colors.search.matches]
+foreground = "#{{bg0}}"
+background = "#{{yellow}}"
+
+[colors.search.focused_match]
+foreground = "#{{bg0}}"
+background = "#{{orange}}"
+
+[colors.hints.start]
+foreground = "#{{bg0}}"
+background = "#{{yellow}}"
+
+[colors.hints.end]
+foreground = "#{{bg0}}"
+background = "#{{orange}}"
+
+[colors.selection]
+text       = "#{{fg0}}"
+background = "#{{bg3}}"
+
+[colors.normal]
+black   = "#{{bg0}}"
+red     = "#{{red}}"
+green   = "#{{green}}"
+yellow  = "#{{yellow}}"
+blue    = "#{{blue}}"
+magenta = "#{{purple}}"
+cyan    = "#{{cyan}}"
+white   = "#{{fg1}}"
+
+[colors.bright]
+black   = "#{{bg4}}"
+red     = "#{{red}}"
+green   = "#{{green}}"
+yellow  = "#{{yellow}}"
+blue    = "#{{blue}}"
+magenta = "#{{pink}}"
+cyan    = "#{{cyan}}"
+white   = "#{{fg0}}"
+
+[colors.dim]
+black   = "#{{bg1}}"
+red     = "#{{red}}"
+green   = "#{{green}}"
+yellow  = "#{{yellow}}"
+blue    = "#{{blue}}"
+magenta = "#{{purple}}"
+cyan    = "#{{cyan}}"
+white   = "#{{fg2}}"
