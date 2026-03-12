@@ -13,15 +13,15 @@ A delightful Neovim colorscheme inspired by various themes like Monokai, Mariana
 
 | Role       | Color                                                                  | Hex       |
 |------------|------------------------------------------------------------------------|--------|
-| bg0        | ![#1e1c1a](https://placehold.co/12x12/1e1c1a/1e1c1a.png) Background   | `#1e1c1a` |
-| bg1        | ![#252220](https://placehold.co/12x12/252220/252220.png) Cursorline   | `#252220` |
-| bg2        | ![#2d2a27](https://placehold.co/12x12/2d2a27/2d2a27.png) Sidebars     | `#2d2a27` |
-| bg3        | ![#38342f](https://placehold.co/12x12/38342f/38342f.png) Selection    | `#38342f` |
-| bg4        | ![#4f493f](https://placehold.co/12x12/4f493f/4f493f.png) UI chrome    | `#4f493f` |
-| fg0        | ![#f8f8f2](https://placehold.co/12x12/f8f8f2/f8f8f2.png) Bright text  | `#f8f8f2` |
-| fg1        | ![#d8d4c8](https://placehold.co/12x12/d8d4c8/d8d4c8.png) Normal text  | `#d8d4c8` |
-| fg2        | ![#9e998a](https://placehold.co/12x12/9e998a/9e998a.png) Subtle       | `#9e998a` |
-| fg3        | ![#6b6557](https://placehold.co/12x12/6b6557/6b6557.png) Dim          | `#6b6557` |
+| bg0        | ![#232323](https://placehold.co/12x12/232323/232323.png) Background   | `#232323` |
+| bg1        | ![#2b2b2b](https://placehold.co/12x12/2b2b2b/2b2b2b.png) Cursorline   | `#2b2b2b` |
+| bg2        | ![#323232](https://placehold.co/12x12/323232/323232.png) Sidebars     | `#323232` |
+| bg3        | ![#3c3c3c](https://placehold.co/12x12/3c3c3c/3c3c3c.png) Selection    | `#3c3c3c` |
+| bg4        | ![#505050](https://placehold.co/12x12/505050/505050.png) UI chrome    | `#505050` |
+| fg0        | ![#eeeee8](https://placehold.co/12x12/eeeee8/eeeee8.png) Bright text  | `#eeeee8` |
+| fg1        | ![#c8c6c0](https://placehold.co/12x12/c8c6c0/c8c6c0.png) Normal text  | `#c8c6c0` |
+| fg2        | ![#929088](https://placehold.co/12x12/929088/929088.png) Subtle       | `#929088` |
+| fg3        | ![#626058](https://placehold.co/12x12/626058/626058.png) Dim          | `#626058` |
 | red        | ![#f92672](https://placehold.co/12x12/f92672/f92672.png) Keywords     | `#f92672` |
 | orange     | ![#fd971f](https://placehold.co/12x12/fd971f/fd971f.png) Types        | `#fd971f` |
 | yellow     | ![#e6db74](https://placehold.co/12x12/e6db74/e6db74.png) Strings      | `#e6db74` |
