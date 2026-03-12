@@ -5,6 +5,13 @@ A delightful Neovim colorscheme inspired by various themes like Monokai, Mariana
 ![neovim](https://img.shields.io/badge/neovim-0.8+-green?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
+## Preview
+
+### mokka
+<img width="1463" height="1121" alt="image" src="https://github.com/user-attachments/assets/d0673937-63b3-4736-ad78-32a000c211e8" />
+
+### mariana
+<img width="1463" height="1121" alt="image" src="https://github.com/user-attachments/assets/1cdbd0e5-9762-42f5-8f74-3286e05e3d8c" />
 
 ## Palletes
 <!-- PALETTES_START -->
