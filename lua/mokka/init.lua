@@ -510,7 +510,7 @@ M.load = function()
   hi("BlinkCmpDoc", p.fg1, p.bg2)
   hi("BlinkCmpDocBorder", p.bg4, p.bg2)
   hi("BlinkCmpDocSeparator", p.bg4, p.bg2)
-  hi("BlinkCmpScrollBarThumb", p.bg4)
+  hi("BlinkCmpScrollBarThumb", p.none, p.bg4)
 
   -- ── nvim-tree / neo-tree ──────────────────────────────────────────────
   hi("NvimTreeNormal", p.fg1, p.bg0)
