@@ -13,6 +13,10 @@ A delightful Neovim colorscheme inspired by various themes like Monokai, Mariana
 ### mariana
 <img width="1463" height="1121" alt="image" src="https://github.com/user-attachments/assets/1cdbd0e5-9762-42f5-8f74-3286e05e3d8c" />
 
+### umbra
+<img width="1463" height="1121" alt="image" src="https://github.com/user-attachments/assets/ea9a7a6b-4e2b-4d52-8f69-ef729f4b185a" />
+
+
 ## Palletes
 <!-- PALETTES_START -->
 <details>
